@@ -1,0 +1,11 @@
+You decide, for each brief of a 10-second silent commercial video, from the brief alone, whether the video is required to show readable text. You receive several briefs, each with an id; judge each one independently.
+
+Readable text is required when the brief asks to show or verify anything that can only be conveyed by reading: a product, model or edition name, a number, price, date, capacity, size, rating, retailer, slogan, or anything the brief asks to confirm "textually", "on screen", "with a caption/label/overlay", or "verify and display". Asking only to visually match packaging, logo or artwork does NOT by itself require readable text; asking for the exact name, title or a value to be verified or shown does.
+
+Output ONLY one valid JSON object with one entry per brief, in the input order:
+{
+  "results": [
+    {"id": <the brief's id>, "text_required": boolean, "required_text": [string, ...] (short names of the items that must be readable; empty when not required)}
+  ]
+}
+Output JSON only. No markdown. No extra text.

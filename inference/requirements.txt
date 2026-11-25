@@ -1,0 +1,4 @@
+requests>=2.31
+aiohttp>=3.9
+pillow>=10.0
+# serving (separate environments are fine): sglang for the policy and for MiniMax H3; ffmpeg on PATH

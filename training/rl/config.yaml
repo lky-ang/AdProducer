@@ -1,0 +1,3 @@
+# slime --custom-config-path: extra arguments read by adproducer_rl.generate
+max_turns: 9                       # 8 tool calls + the final answer (Gen-Searcher MAX_LLM_CALL_PER_RUN = 9)
+rollout_interaction_env_path: adproducer_rl   # informational; generate() builds AdProducerEnv directly

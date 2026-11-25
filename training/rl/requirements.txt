@@ -1,0 +1,6 @@
+# On top of the slime docker image (slimerl/slime:latest), which already has torch / Megatron / sglang / transformers.
+# System: ffmpeg (strip the audio track H3 returns), git.
+requests>=2.31
+aiohttp>=3.9
+Pillow>=9.0
+PyYAML>=6.0
